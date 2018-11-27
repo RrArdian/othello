@@ -1,18 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
     tools:context=".controller.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TicTacToe"
+                android:textColor="@color/colorText"
+                android:layout_centerVertical="true"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:text="RESET"
+                android:textColor="@color/colorText"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:columnCount="3">
+
+        <Button
+            android:width="80dp"
+            android:height="80dp" />
+
+        <Button
+            android:width="80dp"
+            android:height="80dp" />
+
+        <Button
+            android:width="80dp"
+            android:height="80dp" />
+
+        <Button
+            android:width="80dp"
+            android:height="80dp" />
+
+        <Button
+            android:width="80dp"
+            android:height="80dp" />
+
+        <Button
+            android:width="80dp"
+            android:height="80dp" />
+
+        <Button
+            android:width="80dp"
+            android:height="80dp" />
+
+        <Button
+            android:width="80dp"
+            android:height="80dp" />
+
+        <Button
+            android:width="80dp"
+            android:height="80dp" />
+    </GridLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="80dp"
+        android:text="X" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="WINNER" />
+
+</LinearLayout>
