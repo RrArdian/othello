@@ -8,48 +8,87 @@
     android:gravity="center_horizontal"
     tools:context=".view.MainActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TicTacToe"
+                android:textColor="@color/colorText"
+                android:layout_centerVertical="true"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:text="RESET"
+                android:textColor="@color/colorText"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:columnCount="3">
 
         <Button
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:text="X" />
+            android:width="80dp"
+            android:height="80dp" />
 
         <Button
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:text="O"/>
+            android:width="80dp"
+            android:height="80dp" />
 
         <Button
-            android:layout_width="80dp"
-            android:layout_height="80dp" />
+            android:width="80dp"
+            android:height="80dp" />
 
         <Button
-            android:layout_width="80dp"
-            android:layout_height="80dp" />
+            android:width="80dp"
+            android:height="80dp" />
 
         <Button
-            android:layout_width="80dp"
-            android:layout_height="80dp" />
+            android:width="80dp"
+            android:height="80dp" />
 
         <Button
-            android:layout_width="80dp"
-            android:layout_height="80dp" />
+            android:width="80dp"
+            android:height="80dp" />
 
         <Button
-            android:layout_width="80dp"
-            android:layout_height="80dp" />
+            android:width="80dp"
+            android:height="80dp" />
 
         <Button
-            android:layout_width="80dp"
-            android:layout_height="80dp" />
+            android:width="80dp"
+            android:height="80dp" />
 
         <Button
-            android:layout_width="80dp"
-            android:layout_height="80dp" />
+            android:width="80dp"
+            android:height="80dp" />
     </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="80dp"
+        android:text="X" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="WINNER" />
 
 </LinearLayout>
