@@ -1,4 +1,4 @@
-package com.othello.test.view;
+package com.othello.test.controller;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
