@@ -11,5 +11,4 @@ public class OthelloPresenter {
     public Board board;
     public Cell cell;
     public Player player;
-
 }
