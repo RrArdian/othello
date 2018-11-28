@@ -1,4 +1,3 @@
 package com.othello.test.model;
 
-public class Player {
-}
+public enum  Player { X, O }

@@ -2,8 +2,10 @@ package com.othello.test.controller;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.othello.test.R;
+import com.othello.test.model.Board;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,5 +13,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Board board = new Board();
+        //Toast.makeText(getApplicationContext(), "Initialize game!", Toast.LENGTH_SHORT).show();
     }
 }
