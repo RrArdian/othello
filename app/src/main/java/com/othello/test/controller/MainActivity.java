@@ -15,6 +15,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Board board = new Board();
-        //Toast.makeText(getApplicationContext(), "Initialize game!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Initialize game!", Toast.LENGTH_SHORT).show();
     }
 }
