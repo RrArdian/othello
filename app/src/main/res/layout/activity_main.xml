@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".controller.MainActivity">
+    tools:context="com.othello.test.controller.MainActivity">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
@@ -43,38 +43,56 @@
         android:columnCount="3">
 
         <Button
+            android:tag="00"
+            android:onClick="onClickCell"
             android:width="80dp"
             android:height="80dp" />
 
         <Button
+            android:tag="01"
+            android:onClick="onClickCell"
             android:width="80dp"
             android:height="80dp" />
 
         <Button
+            android:tag="02"
+            android:onClick="onClickCell"
             android:width="80dp"
             android:height="80dp" />
 
         <Button
+            android:tag="10"
+            android:onClick="onClickCell"
             android:width="80dp"
             android:height="80dp" />
 
         <Button
+            android:tag="11"
+            android:onClick="onClickCell"
             android:width="80dp"
             android:height="80dp" />
 
         <Button
+            android:tag="12"
+            android:onClick="onClickCell"
             android:width="80dp"
             android:height="80dp" />
 
         <Button
+            android:tag="20"
+            android:onClick="onClickCell"
             android:width="80dp"
             android:height="80dp" />
 
         <Button
+            android:tag="21"
+            android:onClick="onClickCell"
             android:width="80dp"
             android:height="80dp" />
 
         <Button
+            android:tag="22"
+            android:onClick="onClickCell"
             android:width="80dp"
             android:height="80dp" />
     </GridLayout>
